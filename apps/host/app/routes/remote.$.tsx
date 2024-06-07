@@ -6,16 +6,16 @@ import { fetchManifest, proxy, updateRoutes } from "remix-federation";
 
 export function loader({ request }: DataFunctionArgs) {
   // Proxy loader requests to the remote app
-  const response = proxy(remotes.remote1, request);
+  const response = proxy(remotes.investigation, request);
   if (response) return response;
 
   // Fetch the remote app's route manifest as this routes loader data
-  return fetchManifest(remotes.remote1);
+  return fetchManifest(remotes.investigation);
 }
 
 export function action({ request }: DataFunctionArgs) {
   // Proxy action requests to the remote app
-  return proxy(remotes.remote1, request);
+  return proxy(remotes.investigation, request);
 }
 
 export default function Component() {

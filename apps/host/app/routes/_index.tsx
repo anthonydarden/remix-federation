@@ -13,13 +13,13 @@ const RemoteWidget = React.lazy(() => loadRemoteModule("remote1", "./widget1"));
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Remix (Host)</h1>
+      <h1>Remix Hosting Page</h1>
       <ul>
         <li>
           <Link to="/host">HOST</Link>
         </li>
         <li>
-          <Link to="/remote/blog">REMOTE</Link>
+          <Link to="/remote/blog">Investigation</Link>
         </li>
       </ul>
 

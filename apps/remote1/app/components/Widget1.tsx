@@ -4,7 +4,7 @@ export default function Widget1() {
   const [count, setCount] = React.useState<number>(0);
   return (
     <>
-      <div>I'm a remote React widget from remote1!</div>
+      <div>I'm a remote React widget from Investigation server!</div>
       <button
         style={{
           border: "0 solid #e2e8f0",

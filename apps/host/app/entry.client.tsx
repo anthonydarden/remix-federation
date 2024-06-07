@@ -3,7 +3,7 @@ import { remotes } from "./utils/remotes";
 
 (async () => {
   await initFederation({
-    remote1: `${remotes.remote1}/remoteEntry.json`,
+    remote1: `${remotes.investigation}/remoteEntry.json`,
   });
 
   await import("./entry.client.bootstrap");
